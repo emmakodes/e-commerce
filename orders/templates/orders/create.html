@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Details</title>
+</head>
+<body>
+<form action="{% url 'orders:add_customer' %}" method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="Submit" value="Add detail to make Payment">
+</form>
+</body>
+</html>
